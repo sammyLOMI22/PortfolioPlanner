@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/sAmt"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/invAmt"
@@ -128,7 +128,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <TextView
         android:id="@+id/textView8"
@@ -152,19 +152,6 @@
         android:text="real estate/REITs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
-        android:text="Domestic Fixed Income"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/textView12"
@@ -205,6 +192,8 @@
         android:text="6.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/midCapAmt"
         app:layout_constraintVertical_bias="0.046" />
 
@@ -213,8 +202,8 @@
         android:layout_width="52dp"
         android:layout_height="45dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginRight="220dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="10.0"
@@ -232,7 +221,7 @@
         android:text="5.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/dMrkAmt"
         app:layout_constraintVertical_bias="0.0" />
@@ -252,26 +241,12 @@
         app:layout_constraintVertical_bias="0.11" />
 
     <EditText
-        android:id="@+id/dfiAmt"
-        android:layout_width="48dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="7.8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/reAMT"
-        app:layout_constraintVertical_bias="0.119" />
-
-    <EditText
         android:id="@+id/editTextNumberDecimal10"
         android:layout_width="47dp"
         android:layout_height="46dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="188dp"
-        android:layout_marginRight="188dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginRight="172dp"
         android:layout_marginBottom="48dp"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -305,5 +280,113 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/lcInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <TextView
+        android:id="@+id/mcInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <TextView
+        android:id="@+id/scInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <TextView
+        android:id="@+id/dmInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <TextView
+        android:id="@+id/emInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/sInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="492dp" />
+
+    <TextView
+        android:id="@+id/reInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <TextView
+        android:id="@+id/dfiInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="598dp" />
+
+    <EditText
+        android:id="@+id/dfiAmt"
+        android:layout_width="48dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="7.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/reAMT"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="40dp"
+        android:text="Domestic Fixed Income"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ifcInvAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="650dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
