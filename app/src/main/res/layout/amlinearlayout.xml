@@ -3,18 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightgrey"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:text="Investment Amount:" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:text="Investment Amount:"
+             />
 
         <EditText
             android:id="@+id/invAmt"
@@ -36,6 +40,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Asset division"
         />
@@ -51,6 +56,7 @@
         android:id="@+id/errorMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:text="Allocation must equal 100%"
         android:textColor="#D61919"
         android:visibility="invisible"
@@ -65,6 +71,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Large Cap:"
         />
@@ -77,13 +84,14 @@
         android:inputType="numberDecimal"
         android:text="36.0"
         />
-    <TextView
-        android:id="@+id/lcInvAmt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0.00"
-        android:visibility="invisible"
-        />
+
+        <TextView
+            android:id="@+id/lcInvAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#10C617"
+            android:visibility="invisible" />
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,6 +101,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Mid Cap:"
         />
@@ -110,6 +119,7 @@
         android:id="@+id/mcInvAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#10C617"
         android:text="0.00"
         android:visibility="invisible"
         />
@@ -122,6 +132,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Small Cap:"
         />
@@ -139,6 +150,7 @@
         android:id="@+id/scInvAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#10C617"
         android:text="0.00"
         android:visibility="invisible"
         />
@@ -152,6 +164,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Developed Markets:" />
 
@@ -169,6 +182,7 @@
         android:id="@+id/dmInvAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#10C617"
         android:text="0.00"
         android:visibility="invisible"
         />
@@ -182,6 +196,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Emerging Markets:"
          />
@@ -198,6 +213,7 @@
         android:id="@+id/emInvAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#10C617"
         android:text="0.00"
         android:visibility="invisible"
         />
@@ -210,6 +226,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Specialty:"
          />
@@ -226,6 +243,7 @@
         android:id="@+id/sInvAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#10C617"
         android:text="0.00"
         android:visibility="invisible"
         />
@@ -238,6 +256,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="real estate/REITs:"
          />
@@ -256,6 +275,7 @@
         android:id="@+id/reInvAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#10C617"
         android:text="0.00"
         android:visibility="invisible"
         />
@@ -269,6 +289,7 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="Domestic Fixed Income:"
         />
@@ -284,6 +305,7 @@
             android:id="@+id/dfiInvAmt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#10C617"
             android:text="0.00"
             android:visibility="invisible"
             />
@@ -296,6 +318,7 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:text="International Fixed Income:"
          />
@@ -312,6 +335,7 @@
         android:id="@+id/ifcInvAmt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#10C617"
         android:text="0.00"
         android:visibility="invisible"
       />

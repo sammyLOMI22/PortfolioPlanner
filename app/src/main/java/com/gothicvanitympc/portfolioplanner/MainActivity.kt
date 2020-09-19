@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun invCalc(){
+        //rest error message
+        errorMsg.visibility = View.INVISIBLE
         //get investment amount
         var invAmtS = invAmt.text.toString()
 
