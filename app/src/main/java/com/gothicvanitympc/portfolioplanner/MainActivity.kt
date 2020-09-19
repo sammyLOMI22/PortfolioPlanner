@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import androidx.core.view.isVisible
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.amlinearlayout.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.amlinearlayout)
 
         val mybutton: Button = findViewById(R.id.calcBtn)
         mybutton.setOnClickListener {  invCalc()}
@@ -46,15 +45,24 @@ class MainActivity : AppCompatActivity() {
 
             //displays investments in hidden fields
             lcInvAmt.text= lcV.toString()
-            mcInvAmt.text= mcV.toString()
-            scInvAmt.text= smV.toString()
-            dmInvAmt.text= dmV.toString()
-            emInvAmt.text= eMV.toString()
-            sInvAmt.text= sV.toString()
-            reInvAmt.text= reV.toString()
-            dfiInvAmt.text= dfiV.toString()
-            ifcInvAmt.text= ifcV.toString()
+            lcInvAmt.visibility = View.VISIBLE
 
+            mcInvAmt.text= mcV.toString()
+            mcInvAmt.visibility = View.VISIBLE
+            scInvAmt.text= smV.toString()
+            scInvAmt.visibility = View.VISIBLE
+            dmInvAmt.text= dmV.toString()
+            dmInvAmt.visibility = View.VISIBLE
+            emInvAmt.text= eMV.toString()
+            emInvAmt.visibility = View.VISIBLE
+            sInvAmt.text= sV.toString()
+            sInvAmt.visibility = View.VISIBLE
+            reInvAmt.text= reV.toString()
+            reInvAmt.visibility = View.VISIBLE
+            dfiInvAmt.text= dfiV.toString()
+            dfiInvAmt.visibility = View.VISIBLE
+            ifcInvAmt.text= ifcV.toString()
+            ifcInvAmt.visibility = View.VISIBLE
         }
         else {
             errorMsg.visibility = View.VISIBLE
