@@ -5,6 +5,8 @@
         <item name="colorPrimary">#27E647</item>
         <item name="colorPrimaryDark">#FC107A3B</item>
         <item name="colorAccent">#1CF4A9</item>
+        <item name="fontFamily">@font/</item>
     </style>
+
 
 </resources>
