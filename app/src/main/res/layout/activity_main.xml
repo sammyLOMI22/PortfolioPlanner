@@ -269,10 +269,11 @@
         app:layout_constraintVertical_bias="0.831" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/errorMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Allocation must equal 100%"
+        android:textColor="#D61919"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
