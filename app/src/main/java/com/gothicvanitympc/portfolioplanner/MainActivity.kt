@@ -1,10 +1,13 @@
 package com.gothicvanitympc.portfolioplanner
 
+import android.icu.text.NumberFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.amlinearlayout.*
+import java.util.*
+import kotlin.text.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,24 +47,23 @@ class MainActivity : AppCompatActivity() {
             var ifcV = invAmtS.toDouble() * (ifcPec.toDouble() / 100)
 
             //displays investments in hidden fields
-            lcInvAmt.text= lcV.toString()
+            lcInvAmt.text= dollarForm(lcV)
             lcInvAmt.visibility = View.VISIBLE
-
-            mcInvAmt.text= mcV.toString()
+            mcInvAmt.text= dollarForm(mcV)
             mcInvAmt.visibility = View.VISIBLE
-            scInvAmt.text= smV.toString()
+            scInvAmt.text= dollarForm(smV)
             scInvAmt.visibility = View.VISIBLE
-            dmInvAmt.text= dmV.toString()
+            dmInvAmt.text= dollarForm(dmV)
             dmInvAmt.visibility = View.VISIBLE
-            emInvAmt.text= eMV.toString()
+            emInvAmt.text= dollarForm(eMV)
             emInvAmt.visibility = View.VISIBLE
-            sInvAmt.text= sV.toString()
+            sInvAmt.text= dollarForm(sV)
             sInvAmt.visibility = View.VISIBLE
-            reInvAmt.text= reV.toString()
+            reInvAmt.text= dollarForm(reV)
             reInvAmt.visibility = View.VISIBLE
-            dfiInvAmt.text= dfiV.toString()
+            dfiInvAmt.text= dollarForm(dfiV)
             dfiInvAmt.visibility = View.VISIBLE
-            ifcInvAmt.text= ifcV.toString()
+            ifcInvAmt.text= dollarForm(ifcV)
             ifcInvAmt.visibility = View.VISIBLE
         }
         else {
@@ -69,8 +71,10 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        }
 
-
-
+    private fun dollarForm( dAmt: Double): String{
+        var numb = dAmt
+       return java.text.NumberFormat.getCurrencyInstance(Locale.US).format(numb)
     }
 }

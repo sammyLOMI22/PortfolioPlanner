@@ -13,17 +13,18 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
         android:text="Investment Amount:" />
 
-    <EditText
-        android:id="@+id/invAmt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        />
+        <EditText
+            android:id="@+id/invAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0.00" />
     </LinearLayout>
 
 
@@ -33,8 +34,9 @@
         android:orientation="horizontal">
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="120dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
         android:text="Asset division"
         />
 
@@ -42,8 +44,6 @@
         android:id="@+id/calcBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
-        android:layout_marginRight="120dp"
         android:text="Calculate"
         />
 
@@ -65,15 +65,14 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:text="Large Cap"
+        android:layout_marginLeft="15dp"
+        android:text="Large Cap:"
         />
 
     <EditText
         android:id="@+id/lgCapAmt"
         android:layout_width="51dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="36.0"
@@ -94,15 +93,14 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:text="Mid Cap"
+        android:layout_marginLeft="15dp"
+        android:text="Mid Cap:"
         />
 
     <EditText
         android:id="@+id/midCapAmt"
-        android:layout_width="46dp"
-        android:layout_height="41dp"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="12.0"
@@ -124,12 +122,13 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small Cap"
+        android:layout_marginLeft="15dp"
+        android:text="Small Cap:"
         />
 
     <EditText
         android:id="@+id/smCapAmt"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -153,12 +152,13 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developed Markets" />
+        android:layout_marginLeft="15dp"
+        android:text="Developed Markets:" />
 
 
     <EditText
         android:id="@+id/dMrkAmt"
-        android:layout_width="wrap_content"
+        android:layout_width="51dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -182,15 +182,14 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:text="Emerging Markets"
+        android:layout_marginLeft="15dp"
+        android:text="Emerging Markets:"
          />
 
     <EditText
         android:id="@+id/eMAmt"
-        android:layout_width="53dp"
-        android:layout_height="45dp"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="5.0"
@@ -211,15 +210,14 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:text="Specialty"
+        android:layout_marginLeft="15dp"
+        android:text="Specialty:"
          />
 
     <EditText
         android:id="@+id/sAmt"
-        android:layout_width="47dp"
-        android:layout_height="42dp"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="9.0"
@@ -240,13 +238,14 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="real estate/REITs"
+        android:layout_marginLeft="15dp"
+        android:text="real estate/REITs:"
          />
 
     <EditText
         android:id="@+id/reAmt"
-        android:layout_width="42dp"
-        android:layout_height="44dp"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="9.0"
@@ -270,11 +269,12 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Domestic Fixed Income"
+        android:layout_marginLeft="15dp"
+        android:text="Domestic Fixed Income:"
         />
     <EditText
         android:id="@+id/dfiAmt"
-        android:layout_width="wrap_content"
+        android:layout_width="51dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -294,16 +294,15 @@
         android:orientation="horizontal">
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="170dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="International Fixed Income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="International Fixed Income:"
          />
 
     <EditText
         android:id="@+id/ifcAmt"
-        android:layout_width="wrap_content"
+        android:layout_width="51dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
