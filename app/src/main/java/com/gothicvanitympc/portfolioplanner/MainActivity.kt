@@ -33,15 +33,15 @@ class MainActivity : AppCompatActivity() {
         var tPfAmt=lcPec.toDouble()+midPec.toDouble()+smPec.toDouble()+dMPec.toDouble()+eMPec.toDouble()+sPec.toDouble()+rePec.toDouble()+dfiPec.toDouble()+ifcPec.toDouble()
         if(tPfAmt == 100.00){
             //calculate investment totals
-            var lcV = invAmtS.toDouble() * (lcPec.toDouble() *100)
-            var mcV = invAmtS.toDouble() * (midPec.toDouble() *100)
-            var smV = invAmtS.toDouble() * (smPec.toDouble() *100)
-            var dmV = invAmtS.toDouble() * (dMPec.toDouble() *100)
-            var eMV = invAmtS.toDouble() * (eMPec.toDouble() *100)
-            var sV = invAmtS.toDouble() * (sPec.toDouble() *100)
-            var reV = invAmtS.toDouble() * (rePec.toDouble() *100)
-            var dfiV = invAmtS.toDouble() * (dfiPec.toDouble() *100)
-            var ifcV = invAmtS.toDouble() * (ifcPec.toDouble() *100)
+            var lcV = invAmtS.toDouble() * (lcPec.toDouble() / 100)
+            var mcV = invAmtS.toDouble() * (midPec.toDouble() / 100)
+            var smV = invAmtS.toDouble() * (smPec.toDouble() / 100)
+            var dmV = invAmtS.toDouble() * (dMPec.toDouble() / 100)
+            var eMV = invAmtS.toDouble() * (eMPec.toDouble() / 100)
+            var sV = invAmtS.toDouble() * (sPec.toDouble() / 100)
+            var reV = invAmtS.toDouble() * (rePec.toDouble() / 100)
+            var dfiV = invAmtS.toDouble() * (dfiPec.toDouble() / 100)
+            var ifcV = invAmtS.toDouble() * (ifcPec.toDouble() / 100)
 
             //displays investments in hidden fields
             lcInvAmt.text= lcV.toString()
