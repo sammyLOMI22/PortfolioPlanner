@@ -71,11 +71,9 @@ class MainActivity : AppCompatActivity() {
         else {
             errorMsg.visibility = View.VISIBLE
         }
-
-
         }
 
-    private fun dollarForm( dAmt: Double): String{
+    private fun dollarForm(dAmt: Double): String{
         var numb = dAmt
        return java.text.NumberFormat.getCurrencyInstance(Locale.US).format(numb)
     }

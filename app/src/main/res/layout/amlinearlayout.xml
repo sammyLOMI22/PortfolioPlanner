@@ -259,15 +259,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#040303"
-        android:textStyle="bold"
-        android:layout_marginLeft="15dp"
-        android:text="real estate/REITs:"
-         />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Real Estate/REITs:"
+            android:textColor="#040303"
+            android:textStyle="bold" />
 
     <EditText
         android:id="@+id/reAmt"
