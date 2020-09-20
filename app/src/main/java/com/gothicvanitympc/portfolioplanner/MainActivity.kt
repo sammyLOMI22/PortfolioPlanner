@@ -20,6 +20,9 @@ import kotlinx.android.synthetic.main.amlinearlayout.*
 import java.util.*
 import kotlin.collections.ArrayList
 import com.github.mikephil.charting.charts.PieChart
+import com.github.mikephil.charting.components.Legend
+import com.github.mikephil.charting.components.Description
+import com.github.mikephil.charting.highlight.Highlight
 
 class MainActivity : AppCompatActivity() {
 
@@ -120,7 +123,7 @@ class MainActivity : AppCompatActivity() {
             pieEntries.add(PieEntry(dfiV.toFloat(), "Domestic Fixed Income"))
             pieEntries.add(PieEntry(ifcV.toFloat(), "International Fixed Income"))
 
-
+            //data to generate piechart for just %
             /*
             var pieEntries: ArrayList<PieEntry> = ArrayList()
             pieEntries.add(PieEntry(lcPec.toFloat(), "Large Cap"))
@@ -138,6 +141,8 @@ class MainActivity : AppCompatActivity() {
             //dataSet.setColors(*JOYFUL_COLORS)
 
             dataSet.setColors(color)
+
+
             var data = PieData(dataSet)
 
             //PieChart chart = (PieChart)findViewById(R.id.idPieChart)
@@ -152,6 +157,15 @@ class MainActivity : AppCompatActivity() {
 
             chart.animateY(2500)
 
+
+            //edit the Description
+
+            chart.description.setText("Investment Portfolio")
+            //edit the legend
+            var lgn : Legend = chart.getLegend()
+            lgn.setForm(Legend.LegendForm.CIRCLE)
+            lgn.setWordWrapEnabled(true)
+            //lgn.setMaxSizePercent(.95f)
 
             //refreash pie chart
             chart.invalidate()
