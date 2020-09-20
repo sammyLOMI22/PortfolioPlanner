@@ -1,9 +1,12 @@
 package com.gothicvanitympc.portfolioplanner
 
 
+import android.content.Context
 import android.graphics.Color.*
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.github.mikephil.charting.data.PieData
@@ -131,9 +134,9 @@ class MainActivity : AppCompatActivity() {
             */
 
             var dataSet = PieDataSet(pieEntries, "Investment Portfolio")
-            dataSet.setColors(*JOYFUL_COLORS)
+            //dataSet.setColors(*JOYFUL_COLORS)
 
-            //dataSet.setColors(color)
+            dataSet.setColors(color)
             var data = PieData(dataSet)
 
             //PieChart chart = (PieChart)findViewById(R.id.idPieChart)
@@ -144,7 +147,10 @@ class MainActivity : AppCompatActivity() {
             //piechart styling
             chart.setHoleRadius(0f)
             chart.setTransparentCircleAlpha(0)
-           
+            chart.setDrawEntryLabels(false)
+
+            chart.animateY(2500)
+
 
             //refreash pie chart
             chart.invalidate()
@@ -179,7 +185,14 @@ class MainActivity : AppCompatActivity() {
         var numb = dAmt
         return java.text.NumberFormat.getCurrencyInstance(Locale.US).format(numb)
     }
-
+//close keyboard after click
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        if (currentFocus != null) {
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
+        }
+        return super.dispatchTouchEvent(ev)
+    }
 
     }
 
