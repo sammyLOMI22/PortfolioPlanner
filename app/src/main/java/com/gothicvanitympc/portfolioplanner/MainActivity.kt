@@ -2,6 +2,7 @@ package com.gothicvanitympc.portfolioplanner
 
 
 import android.content.Context
+import android.graphics.Color
 import android.graphics.Color.*
 import android.os.Bundle
 import android.view.MotionEvent
@@ -106,7 +107,7 @@ class MainActivity : AppCompatActivity() {
             color.add(MAGENTA)
             color.add(DKGRAY)
             color.add(BLACK)
-            color.add(LTGRAY)
+            color.add(WHITE)
 
             var pieEntries: ArrayList<PieEntry> = ArrayList()
             pieEntries.add(PieEntry(lcV.toFloat(), "Large Cap"))
